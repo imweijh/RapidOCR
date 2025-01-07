@@ -12,9 +12,9 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN set -eux; \
-    pip install --no-cache-dir rapidocr_api pillow rapidocr-onnxruntime==1.3.25 -i https://mirrors.aliyun.com/pypi/simple; \
+    pip install --no-cache-dir rapidocr_api pillow rapidocr-onnxruntime==1.3.25; \
     pip uninstall -y opencv-python; \
-    pip install --no-cache-dir opencv-python-headless -i https://mirrors.aliyun.com/pypi/simple
+    pip install --no-cache-dir opencv-python-headless
 
 EXPOSE 9003
 

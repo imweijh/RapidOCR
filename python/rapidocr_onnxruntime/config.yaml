@@ -22,11 +22,11 @@ Det:
 
     model_path: models/ch_PP-OCRv4_det_infer.onnx
 
-    limit_side_len: 736
+    limit_side_len: 960
     limit_type: min
 
     thresh: 0.3
-    box_thresh: 0.5
+    box_thresh: 0.7
     max_candidates: 1000
     unclip_ratio: 1.6
     use_dilation: true
